@@ -3,10 +3,12 @@ import Banner from '../../Component/Banner/Banner'
 import TopFood from './topFood/TopFood'
 
 const Home = () => {
+
   return (
     <div>
-        <Banner></Banner>
-        <TopFood></TopFood>
+  
+      <Banner></Banner>
+      <TopFood></TopFood>
     </div>
   )
 }
