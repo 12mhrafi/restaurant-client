@@ -35,9 +35,7 @@ const SingleCard = ({ singleFood }) => {
 
                         </div>
                     </div>
-                    <Link to={`/foodPurchase/${_id}`}><button className='bg-orange-400 p-2 mt-3 text-white w-full'>Order Now</button></Link>
-
-
+                    <Link  to={`/foodPurchase/${_id}`}><button className='bg-orange-400 p-2 mt-3 text-white w-full'>Order Now</button></Link>
                 </div>
             </div>
             <div>

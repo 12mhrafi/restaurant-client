@@ -2,8 +2,13 @@ import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../Provider/AuthProvider';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import { Navigate, useNavigate } from 'react-router-dom';
+
+
 
 const FoodPurchaseCard = ({ orderFood }) => {
+    const navigate = useNavigate();
+
 
     const { user } = useContext(AuthContext);
     console.log(user)
@@ -40,6 +45,7 @@ const FoodPurchaseCard = ({ orderFood }) => {
             console.log(res);
             if(res.data.insertedId ){
                 toast.success("Order Confirmed Successful!");
+                navigate("/allFood")
             }
         })
         .catch((err)=>{

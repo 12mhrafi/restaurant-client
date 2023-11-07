@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react'
 import { Button, Card, Checkbox, Label, RangeSlider, TextInput } from 'flowbite-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {toast} from "react-hot-toast"
 import { AuthContext } from '../../Provider/AuthProvider';
 const Register = () => {
   const [errors, setErrors] = useState(null);
-  const { createUser } = useContext(AuthContext)
-
-
+  const { createUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -36,6 +36,7 @@ const Register = () => {
     createUser(email, password)
       .then(result => {
         if(result.user){
+          navigate(location?.state ? location?.state : "/")
           toast.success("Successfully Registration!")
         }
       })
