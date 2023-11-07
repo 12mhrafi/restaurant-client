@@ -5,6 +5,7 @@ import MyOrderCard from './MyOrderCard';
 
 const MyOrder = () => {
   const [totalOrder, setTotalOrder] = useState([]);
+
   const { user } = useContext(AuthContext);
 
 
@@ -13,6 +14,7 @@ const MyOrder = () => {
     axios.get(`http://localhost:5000/allOrderData?email=${user?.email}`)
       .then(res => {
         if (res) {
+
           setTotalOrder(res?.data)
         }
       })

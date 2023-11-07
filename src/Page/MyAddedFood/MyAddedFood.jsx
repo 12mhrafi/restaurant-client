@@ -13,7 +13,7 @@ const MyAddedFood = () => {
     axios.get(`http://localhost:5000/userAddedProducts?email=${user?.email}`)
     .then(res=>{
         if(res.data){
-            setMyFoods(res.data);
+            setMyFoods(res?.data);
         }
     })
  },[])
