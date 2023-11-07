@@ -16,7 +16,7 @@ const AddFood = () => {
         const image  = form.image.value;
         const category = form.category.value;
         const quantity = form.quantity.value;
-        const order = "0";
+        const order = 0;
         const price = form.price.value;
         const origin = form.origin.value;
         const description = form.description.value;

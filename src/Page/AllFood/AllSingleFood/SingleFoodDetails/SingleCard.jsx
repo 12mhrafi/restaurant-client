@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const SingleCard = ({ singleFood }) => {
     const { _id, FoodName, image, category, order, price, origin, description, quantity, email } = singleFood;
-   
+
     return (
         <div>
             <div className='grid md:grid-cols-2 gap-8'>
@@ -35,7 +35,7 @@ const SingleCard = ({ singleFood }) => {
 
                         </div>
                     </div>
-                    <Link  to={`/foodPurchase/${_id}`}><button className='bg-orange-400 p-2 mt-3 text-white w-full'>Order Now</button></Link>
+                    <Link to={`/foodPurchase/${_id}`}><button className='bg-orange-400 p-2 mt-3 text-white w-full'>Order Now</button></Link>
                 </div>
             </div>
             <div>

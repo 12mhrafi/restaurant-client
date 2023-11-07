@@ -69,9 +69,9 @@ const NavBar = () => {
                 </div>
               }
             </Dropdown.Header>
-            <Dropdown.Item><Link to="/myAddedFood">My added food items</Link></Dropdown.Item>
-            <Dropdown.Item> <Link to="/addFood">Add a food item</Link> </Dropdown.Item>
-            <Dropdown.Item> <Link to="/myOrder" >My ordered food item</Link> </Dropdown.Item>
+            <Link to="/myAddedFood"><Dropdown.Item>My added food items</Dropdown.Item></Link>
+            <Link to="/addFood"><Dropdown.Item>Add a food item</Dropdown.Item></Link>
+            <Link to="/myOrder" ><Dropdown.Item>My ordered food item </Dropdown.Item></Link>
             <Dropdown.Divider />
             <Dropdown.Item>
 

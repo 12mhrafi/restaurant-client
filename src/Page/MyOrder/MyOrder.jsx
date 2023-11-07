@@ -9,14 +9,16 @@ const MyOrder = () => {
   const { user } = useContext(AuthContext);
 
 
+
   useEffect(() => {
 
     axios.get(`http://localhost:5000/allOrderData?email=${user?.email}`)
       .then(res => {
-        if (res) {
 
+        if (res) {
           setTotalOrder(res?.data)
         }
+
       })
   }, [])
 

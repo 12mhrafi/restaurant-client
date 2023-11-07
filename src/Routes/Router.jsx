@@ -31,6 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/allFood",
+        loader:() => fetch("http://localhost:5000/paginationCount"),
         element:<AllFood></AllFood>
       },
       {

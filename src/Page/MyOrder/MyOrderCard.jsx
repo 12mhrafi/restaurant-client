@@ -4,8 +4,8 @@ import React from 'react'
 
 const MyOrderCard = ({ orderData, handleDeleteOrder }) => {
     // console.log(orderData);
-    const { _id, image, foodName, price, date, userEmail } = orderData;
-
+    const { _id, image, foodName, price, date, userEmail,order } = orderData;
+    
     return (
         <>
             <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">

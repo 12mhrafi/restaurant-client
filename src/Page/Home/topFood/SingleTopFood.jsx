@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa6"
 import { Link } from 'react-router-dom';
 const SingleTopFood = ({ product }) => {
 
-    const { _id,FoodName, image,order, category, price } = product;
+    const { _id,FoodName,quantity, image,order, category, price } = product;
 
 
 
@@ -27,6 +27,7 @@ const SingleTopFood = ({ product }) => {
                             <p className='font-semibold'>Category: <span>{category}</span></p>
                             <p className=' font-semibold'>Total Order: <span className='text-orange-600 font-semibold'>{order}</span></p>
                             <p className=' font-semibold'>Price: <span className='text-orange-600 font-semibold'>${price}</span></p>
+                            <p className=' font-semibold'>Available: <span className='text-orange-600 font-semibold'>({quantity})</span></p>
                             <Link to={`/singleFoodDetails/${_id}`}><button className='bg-orange-400 p-2 text-white w-full'>Details</button></Link>
                         </div>
                     </div>
