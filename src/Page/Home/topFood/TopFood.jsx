@@ -29,7 +29,7 @@ const TopFood = () => {
 
     return (
         <div className='mt-24'>
-            <div className='container mx-auto '>
+            <div className='container px-4  mx-auto '>
                 <h2 className='font-semibold text-3xl'>Top ordered food </h2>
                 <div className='mt-8'>
 

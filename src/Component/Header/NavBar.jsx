@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Avatar, Dropdown, Navbar, Button } from 'flowbite-react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
@@ -18,39 +18,51 @@ const NavBar = () => {
   }
 
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let stickyScroll = document.documentElement.querySelector(".stickyNav");
+      let height = scrollY;
+      if (height > 0) {
+       
+        stickyScroll.classList.add('active');
+      } else {
+        stickyScroll.classList.remove('active');
+      }
+    })
+  }, [])
 
 
 
 
 
-  const navLinks = <div className='flex  text-blue-400 flex-col md:flex-row gap-2 md:gap-6'>
+  const navLinks = <div className='flex flex-col text-gray-800  md:flex-row gap-2 md:gap-6'>
     <NavLink
       to="/"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-blue-700 font-extrabold" : ""}> Home
+        isPending ? "pending" : isActive ? "text-orange-500 font-extrabold" : ""}> Home
     </NavLink>
     <NavLink
       to="/allFood"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-blue-700 font-extrabold" : ""}> All Food Items
+        isPending ? "pending" : isActive ? "text-orange-500 font-extrabold" : ""}> All Food Items
     </NavLink>
     <NavLink
       to="/blog"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-blue-700 font-extrabold" : ""}> Blog
+        isPending ? "pending" : isActive ? "text-orange-500  font-extrabold" : ""}> Blog
     </NavLink>
     <NavLink
       to="/login"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-blue-700 font-extrabold" : ""}> Login
+        isPending ? "pending" : isActive ? "text-orange-500  font-extrabold" : ""}> Login
     </NavLink>
 
   </div>
   return (
-    <div className='h-[80px] fixed left-0 top-0 right-0 z-50 bg-transparent'>
-      <Navbar className='bg-transparent text-white' >
+    <div className='h-[80px] stickyNav   fixed left-0 top-0 right-0 z-50 bg-transparent'>
+      <Navbar className='bg-transparent text-white flex items-center w-full h-full' >
         <Navbar.Brand href="/">
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">MR Restaurant</span>
+          <span className="self-center whitespace-nowrap text-xl font-semibold text-orange-400">MR Restaurant</span>
         </Navbar.Brand>
         <div className="flex md:order-2">
           <Dropdown

@@ -11,7 +11,7 @@ const SingleFoodDetails = () => {
 
     return (
         <div className='mt-16'>
-            <div className='container mx-auto'>
+            <div className='container px-4  mx-auto'>
                 <div>
                     {
                         singleFoodInfo?.map(singleFood => <SingleCard singleFood={singleFood} key={singleFood._id}></SingleCard>)

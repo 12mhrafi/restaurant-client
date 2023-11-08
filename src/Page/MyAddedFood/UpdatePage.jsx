@@ -20,7 +20,7 @@ const UpdatePage = () => {
     return (
         <div className='mt-16'>
             <h2 className='text-center'>Update Food Item</h2>
-            <div className='container mx-auto'>
+            <div className='container px-4  mx-auto'>
                 {
                     updateSingleData?.map(singleData => <UpdatePageCard
                         key={singleData._id}

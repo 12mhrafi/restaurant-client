@@ -23,7 +23,7 @@ const MyAddedFood = () => {
 
   return (
     <div className='mt-16'>
-      <div className='container mx-auto '>
+      <div className='container px-4  mx-auto '>
         <h2 className='text-4xl font-semibold py-8'>My Added Food </h2>
         <div>
           <div className="relative overflow-x-auto sm:rounded-lg">

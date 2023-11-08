@@ -39,7 +39,7 @@ const AddFood = () => {
     return (
         <div className='mt-16'>
             <h2 className='text-center'>Add Food Item</h2>
-            <div className='container mx-auto'>
+            <div className='container px-4  mx-auto'>
                 <form onSubmit={handleFoodAdd} className='md:w-[50%] w-full mx-auto '>
                     <div className="mb-6">
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Food Name</label>

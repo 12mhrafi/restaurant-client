@@ -62,7 +62,7 @@ const Login = () => {
 
   return (
     <div className='mt-16'>
-      <div className='container mx-auto px-4'>
+      <div className='container px-4  mx-auto px-4'>
         <Card className='md:w-[50%]
          m-auto'>
           <h2 className='text-3xl font-semibold mb-5'>Login here</h2>

@@ -61,7 +61,7 @@ const AllFood = () => {
 
 
   return (
-    <div className='mt-16 container mx-auto '>
+    <div className='mt-16 container px-4  mx-auto '>
 
       <div className='flex items-center gap mt-5 mx-auto md:w-[60%]'>
 
@@ -79,7 +79,7 @@ const AllFood = () => {
 
         {
           allProducts &&
-          allProducts?.map(allproduct => <AllSingleFood allproduct={allproduct} key={allproduct.key}></AllSingleFood>)
+          allProducts?.map(allproduct => <AllSingleFood allproduct={allproduct} key={allproduct._id}></AllSingleFood>)
         }
 
       </div>
