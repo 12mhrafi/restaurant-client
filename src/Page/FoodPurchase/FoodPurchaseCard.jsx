@@ -56,7 +56,7 @@ const FoodPurchaseCard = ({ orderFood }) => {
 
         const orderData = { foodName, userEmail, image, price, date }
 
-        axios.post("http://localhost:5000/confirmOrder", orderData)
+        axios.post("https://server-eight-roan.vercel.app/confirmOrder", orderData)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {
@@ -68,7 +68,7 @@ const FoodPurchaseCard = ({ orderFood }) => {
                 console.log("order error", err);
             })
 
-        axios.patch(`http://localhost:5000/api/sortProducts/${_id}`, { incOrder })
+        axios.patch(`https://server-eight-roan.vercel.app/api/sortProducts/${_id}`, { incOrder })
             .then(res => {
                 console.log(res)
             })

@@ -12,7 +12,7 @@ const MyOrder = () => {
 
   useEffect(() => {
 
-    axios.get(`http://localhost:5000/allOrderData?email=${user?.email}`)
+    axios.get(`https://server-eight-roan.vercel.app/allOrderData?email=${user?.email}`)
       .then(res => {
 
         if (res) {
@@ -25,7 +25,7 @@ const MyOrder = () => {
   const handleDeleteOrder = (id) => {
 
 
-    axios.delete(`http://localhost:5000/allOrderData/${id}`)
+    axios.delete(`https://server-eight-roan.vercel.app/allOrderData/${id}`)
       .then(res => {
         if (res.data.deletedCount > 0) {
 

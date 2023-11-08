@@ -6,26 +6,17 @@ import { Link } from 'react-router-dom';
 const TopFood = () => {
 
     const [products, setProducts] = useState([]);
-
-
     const handleAllBtn = () => {
-
     }
 
-
-
     useEffect(() => {
-        axios.get("http://localhost:5000/api/sortProducts")
+        axios.get("https://server-eight-roan.vercel.app/api/sortProducts")
             .then(res => {
                 if (res) {
-                    setProducts(res.data)
-
+                    setProducts(res.data);
                 }
             })
     }, [])
-
-
-
 
     return (
         <div className='mt-24'>

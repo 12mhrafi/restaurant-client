@@ -24,7 +24,7 @@ const AddFood = () => {
 
         const addItem = {FoodName,image,category,quantity,order,price,origin,description,email}
 
-        axios.post("http://localhost:5000/products",addItem)
+        axios.post("https://server-eight-roan.vercel.app/products",addItem)
         .then(res =>{
             if(res){
                 toast.success("Successfully Added!")

@@ -7,7 +7,7 @@ const Blog = () => {
         <h2 className='md:text-4xl text-3xl text-center '>Blog</h2>
         <div className='grid md:grid-cols-2 gap-5 lg:grid-cols-3 mt-14'>
           <div>
-            <img className='h-[200px] w-full object-cover' src={"https://i.ibb.co/mF87Lqh/OIP-6.jpg"} alt="" />
+            <img className='h-[200px] w-full object-cover' src={"https://i.ibb.co/XC865sS/BigData.jpg"} alt="" />
             <div className='p-2'>
               <h2 className='text-2xl font-semibold mt-4'>What is One way data binding?</h2>
               <p className='mt-4'>
@@ -18,7 +18,7 @@ const Blog = () => {
             </div>
           </div>
           <div>
-            <img className='h-[200px] w-full object-cover' src={"https://i.ibb.co/mF87Lqh/OIP-6.jpg"} alt="" />
+            <img className='h-[200px] w-full object-cover' src={"https://i.ibb.co/PGCBcyK/download.png"} alt="" />
             <div className='p-2'>
               <h2 className='text-2xl font-semibold mt-4'>What is NPM in node.js?</h2>
               <p className='mt-4'>
@@ -29,7 +29,7 @@ const Blog = () => {
             </div>
           </div>
           <div>
-            <img className='h-[200px] w-full object-cover' src={"https://i.ibb.co/mF87Lqh/OIP-6.jpg"} alt="" />
+            <img className='h-[200px] w-full object-cover' src={"https://i.ibb.co/QfpD8gb/1.png"} alt="" />
             <div className='p-2'>
               <h2 className='text-2xl font-semibold mt-4'>Different between Mongodb database vs mySQL database?</h2>
               <p className='mt-4'>
