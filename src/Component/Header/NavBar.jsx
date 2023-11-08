@@ -59,7 +59,7 @@ const NavBar = () => {
 
   </div>
   return (
-    <div className='h-[80px] stickyNav   fixed left-0 top-0 right-0 z-50 bg-transparent'>
+    <div className=' md:h-[80px] items-center  fixed top-0 left-0 right-0 z-50 stickyNav'>
       <Navbar className='bg-transparent text-white flex items-center w-full h-full' >
         <Navbar.Brand href="/">
           <span className="self-center whitespace-nowrap text-xl font-semibold text-orange-400">MR Restaurant</span>

@@ -62,7 +62,7 @@ const Login = () => {
   }
 
   return (
-    <div className='mt-16'>
+    <div className='mt-32'>
       <div className='container mx-auto px-4'>
         <Card className='md:w-[50%]
          m-auto shadow-none'>
@@ -106,9 +106,9 @@ const Login = () => {
           <div>
             <p>Don't have an account? <Link to='/register' className='text-green-400 underline'>Register here</Link> </p>
             <p className='flex justify-center   mt-5 font-semibold'>or continue with</p>
-            <div className='flex gap-4 mt-5'>
-              <button className='bg-[#d62d20] flex items-center gap-2 px-24 py-2 text-white' onClick={handleGoogle}>  <FaGoogle></FaGoogle> google</button>
-              <button className='bg-[#1877F2] flex items-center gap-2 px-24 py-2 text-white' onClick={handlefacebook}> <FaFacebook></FaFacebook>   facebook</button>
+            <div className='md:flex gap-4 mt-5'>
+              <button className='bg-[#d62d20] flex items-center justify-center gap-2 w-full  md:w-[50%] py-2 text-white' onClick={handleGoogle}>  <FaGoogle></FaGoogle> google</button>
+              <button className='bg-[#1877F2] flex items-center justify-center gap-2 w-full md:mt-0 mt-5 md:w-[50%] py-2 text-white' onClick={handlefacebook}> <FaFacebook></FaFacebook>   facebook</button>
             </div>
           </div>
         </Card>

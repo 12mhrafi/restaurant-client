@@ -15,7 +15,6 @@ const AllFood = () => {
 
   const numberOfPages = Math.ceil(count / itemsPerPage)
 
-
   const pages = [...Array(numberOfPages).keys()];
 
   // console.log(pages);
@@ -62,7 +61,7 @@ const AllFood = () => {
 
 
   return (
-    <div className='mt-16 container px-4  mx-auto '>
+    <div className='mt-28 container px-4  mx-auto '>
 
       <div className='flex items-center gap mt-5 mx-auto md:w-[60%]'>
 

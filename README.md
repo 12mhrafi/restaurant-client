@@ -7,3 +7,5 @@ This is Restaurant management website.It has some features.Here are core feature
 - if available product is being finished can't order those product.
 - User can't purchase their own added product.
 - Search functionality according to product name.
+
+website live link : https://654bfbe44906e94fcf4b57aa--euphonious-chebakia-3bd991.netlify.app
