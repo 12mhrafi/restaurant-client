@@ -2,13 +2,13 @@ import React from 'react'
 
 const Starter = () => {
     return (
-        <div className='mt-24'>
+        <div className='mt-24 bg-white py-20'>
             <div className='container px-4  mx-auto'>
                 <div className='md:w-[50%] mb-5 mx-auto text-center'>
                     <h2 className='text-4xl font-bold'> Our Starter</h2>
-                    <p className='mt-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, quia. Quidem, aspernatur quam impedit consequuntur optio ad tenetur nostrum! Animi magni corrupti repellendus. Illum nobis asperiores excepturi, tempore assumenda ad.</p>
+                    <p className='mt-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, quia. Quidem, aspernatur quam impedit consequuntur optio ad tenetur nostrum! Animi magni corrupti repellendus. Illum nobis asperiores excepturi, tempore assumenda ad.</p>
                 </div>
-                <div className='grid mt-5 md:grid-cols-2 gap-6'>
+                <div className='grid mt-20 md:grid-cols-2 gap-6'>
                     <div>
                         <div className='flex flex-col gap-10'>
                             <div className='flex gap-5 items-center'>

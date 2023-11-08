@@ -35,26 +35,26 @@ const NavBar = () => {
 
 
 
-  const navLinks = <div className='flex flex-col text-gray-800  md:flex-row gap-2 md:gap-6'>
+  const navLinks = <div className='flex flex-col text-orange-400  md:flex-row gap-2 md:gap-6'>
     <NavLink
       to="/"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-orange-500 font-extrabold" : ""}> Home
+        isPending ? "pending" : isActive ? "text-white bg-black p-3 rounded-lg font-extrabold" : "p-3"}> Home
     </NavLink>
     <NavLink
       to="/allFood"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-orange-500 font-extrabold" : ""}> All Food Items
+        isPending ? "pending" : isActive ? "text-white bg-black p-3 rounded-lg font-extrabold" : "p-3"}> All Food Item
     </NavLink>
     <NavLink
       to="/blog"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-orange-500  font-extrabold" : ""}> Blog
+        isPending ? "pending" : isActive ? "text-white bg-black p-3 rounded-lg font-extrabold" : "p-3"}> Blog
     </NavLink>
     <NavLink
       to="/login"
       className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-orange-500  font-extrabold" : ""}> Login
+        isPending ? "pending" : isActive ? "text-white bg-black p-3 rounded-lg font-extrabold" : "p-3"}> Login
     </NavLink>
 
   </div>
