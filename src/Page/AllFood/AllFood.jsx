@@ -52,7 +52,7 @@ const AllFood = () => {
       setCurrentPage(currentPage - 1);
     }
   }
-
+  
   const handleNext = () => {
     if (currentPage < pages.length - 1) {
       setCurrentPage(currentPage + 1);
