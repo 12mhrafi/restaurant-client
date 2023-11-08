@@ -57,9 +57,9 @@ const Register = () => {
 
   return (
     <div className='mt-16'>
-      <div className='container px-4  mx-auto px-4'>
-        <div className='md:w-[50%]
-         m-auto'>
+      <div className='container mx-auto px-4'>
+        <Card className='md:w-[50%]
+         m-auto bg-white shadow-none'>
           <h2 className='text-3xl font-semibold mb-5'>Registration here</h2>
           <form onSubmit={handleRegister} className="flex flex-col gap-4">
             <div>
@@ -93,18 +93,16 @@ const Register = () => {
               <p className='text-red-600 mt-2'>{errors}</p>
             </div>
 
-            <Button type="submit">
+            <button className='bg-black text-white py-2' type="submit">
               Register
-            </Button>
+            </button>
           </form>
           <p className='text-red-600 mt-2'></p>
           <div>
             <p>Already have an account? <Link to='/login' className='text-green-400 underline'>Login here</Link> </p>
-            <p className='flex justify-center  mt-5 font-semibold'>or continue with</p>
-
 
           </div>
-        </div>
+        </Card>
       </div>
     </div>
   )

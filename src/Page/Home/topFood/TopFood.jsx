@@ -35,13 +35,15 @@ const TopFood = () => {
 
                     <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
                         {
-                            products.slice(0,6)?.map(product => <SingleTopFood key={product._id} product={product}></SingleTopFood>)
+                            products.slice(0, 6)?.map(product => <SingleTopFood key={product._id} product={product}></SingleTopFood>)
                         }
 
                     </div>
 
-                    <Link to="/allFood"><button  onClick={handleAllBtn} className='text-white py-2 px-10 mt-5 bg-orange-400 text-center'>See All</button></Link>
+                    <div className='flex justify-center'>
+                        <Link to="/allFood"><button onClick={handleAllBtn} className='text-white text-2xl py-2 px-10 mt-10 bg-orange-400 text-center'>See All</button></Link>
 
+                    </div>
                 </div>
             </div>
         </div>
