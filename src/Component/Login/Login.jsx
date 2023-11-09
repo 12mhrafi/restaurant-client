@@ -4,22 +4,24 @@ import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import { FaFacebook, FaGoogle } from 'react-icons/fa6';
+
 const Login = () => {
   const [error, setError] = useState(null)
   const { loginUser, googleLogin, facebookLogin } = useContext(AuthContext)
 
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location)
+  
 
   const handlefacebook = () => {
     facebookLogin()
       .then((result) => {
+        console.log(result)
         if (result.user) {
           toast.success("Login Success");
+          navigate(location?.state ? location?.state : "/")
         }
-        navigate(location?.state ? location?.state : "/")
-
+       
       })
       .catch(err => {
         console.log(err);
@@ -29,10 +31,12 @@ const Login = () => {
   const handleGoogle = () => {
     googleLogin()
       .then((result) => {
-        if (result.user) {
-          toast.success("Login Success!")
+        const user = result.user;
+        if (user) {
+          toast.success("Login Success!");
+          navigate(location?.state ? location?.state : "/")
         }
-        navigate(location?.state ? location?.state : "/")
+       
       })
       .catch((err) => {
         console.log(err)
@@ -77,7 +81,7 @@ const Login = () => {
               </div>
               <TextInput
                 id="email1"
-                placeholder="name@flowbite.com"
+                placeholder="name@gmail.com"
                 required
                 type="email"
                 name="email"
@@ -117,4 +121,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login;

@@ -1,15 +1,14 @@
 import React from 'react'
-import banner from "../../../src/assets/img/banner.avif"
 import { Carousel } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <div>
       <div className="h-[100vh]">
-        <Carousel onSlideChange={(index) => console.log('onSlideChange()', index)}>
+        <Carousel onSlideChange={(index) => ('onSlideChange()', index)}>
           <div className="flex h-[100vh] items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
             <div className='relative top-0 w-full h-[100vh] text-center'>
-              <img className="h-full w-full object-cover" src={banner} alt="" />
+              <img className="h-full w-full object-cover" src={"https://i.ibb.co/3hrm2nx/istockphoto-1056859716-612x612.jpg"} alt="" />
               <div>
                 <div className="absolute gap-4   text-white  inset-0 flex justify-center items-center flex-col bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)]">
                   <h3>Highlights</h3>
@@ -22,7 +21,7 @@ const Banner = () => {
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
             <div className='relative top-0 w-full h-[100vh] text-center'>
-              <img className="h-full w-full object-cover" src={banner} alt="" />
+              <img className="h-full w-full object-cover" src={"https://i.ibb.co/3hrm2nx/istockphoto-1056859716-612x612.jpg"} alt="" />
               <div>
                 <div className="absolute gap-4   text-white  inset-0 flex justify-center items-center flex-col bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)]">
                   <h3>Highlights</h3>
@@ -35,7 +34,7 @@ const Banner = () => {
           </div>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
             <div className='relative top-0 w-full h-[100vh] text-center'>
-              <img className="h-full w-full object-cover" src={banner} alt="" />
+              <img className="h-full w-full object-cover" src={"https://i.ibb.co/3hrm2nx/istockphoto-1056859716-612x612.jpg"} alt="" />
               <div>
                 <div className="absolute gap-4   text-white  inset-0 flex justify-center items-center flex-col bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)]">
                   <h3>Highlights</h3>

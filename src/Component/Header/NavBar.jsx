@@ -7,13 +7,11 @@ const NavBar = () => {
 
   const { user, logOutUser } = useContext(AuthContext)
 
-  console.log(user)
+
   const handleLogOut = () => {
     logOutUser()
       .then(() => {
-
         toast.success("logOut Successful!")
-
       })
   }
 
@@ -69,15 +67,15 @@ const NavBar = () => {
             arrowIcon={false}
             inline
             label={
-              <Avatar alt="User settings" img={user && user.photoURL} rounded />
+              <Avatar alt="User settings" img={user?.photoURL} rounded />
             }
           >
             <Dropdown.Header>
               {
                 user &&
                 <div>
-                  <span className="block text-sm">{user.displayName}</span>
-                  <span className="block truncate text-sm font-medium">{user.email}</span>
+                  <span className="block text-sm">{user?.displayName}</span>
+                  <span className="block truncate text-sm font-medium">{user?.email}</span>
                 </div>
               }
             </Dropdown.Header>

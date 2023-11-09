@@ -40,22 +40,22 @@ const UpdatePageCard = ({ singleData }) => {
         <div>
             <form onSubmit={ handleFoodUpdate} className='md:w-[50%] w-full mx-auto '>
                 <div className="mb-6">
-                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Food Name</label>
+                    <label for="name" classNameName="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Food Name</label>
                     <input type="text"
                         name='name' defaultValue={FoodName} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Food Name" required />
                 </div>
                 <div className="mb-6">
-                    <label for="image" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Image</label>
+                    <label for="image" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Image</label>
                     <input type="text"
                         name='image' defaultValue={image} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="image" required />
                 </div>
                 <div className="mb-6">
-                    <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                    <label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
                     <input type="text"
                         name='category' defaultValue={category} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Category" required />
                 </div>
                 <div className="mb-6">
-                    <label for="quantity" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                    <label for="quantity" classNameName="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
                     <input type="number"
                         name='quantity' defaultValue={quantity} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Quantity" required />
                 </div>

@@ -71,7 +71,7 @@ const Register = () => {
               </div>
               <TextInput
                 id="email1"
-                placeholder="name@flowbite.com"
+                placeholder="name@gmail.com"
                 required
                 type="email"
                 name="email"
