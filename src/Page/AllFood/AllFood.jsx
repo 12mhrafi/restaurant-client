@@ -20,8 +20,6 @@ const AllFood = () => {
   // console.log(pages);
 
 
-
-
   // console.log(filterProduct)
   useEffect(() => {
     axios.get(`https://server-eight-roan.vercel.app/api/sortProducts?page=${currentPage}&size=${itemsPerPage}`)

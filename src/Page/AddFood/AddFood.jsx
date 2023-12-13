@@ -4,10 +4,8 @@ import axios from "axios"
 import toast from 'react-hot-toast'
 
 const AddFood = () => {
-
-    const {user} = useContext(AuthContext)
     
-
+    const {user} = useContext(AuthContext);
     const handleFoodAdd = (e) => {
         e.preventDefault();
        
