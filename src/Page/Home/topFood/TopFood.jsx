@@ -10,7 +10,7 @@ const TopFood = () => {
     }
 
     useEffect(() => {
-        axios.get("https://server-eight-roan.vercel.app/api/sortProducts")
+        axios.get("https://restaurant-server-rho.vercel.app/api/sortProducts")
             .then(res => {
                 if (res) {
                     setProducts(res.data);

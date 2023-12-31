@@ -22,7 +22,7 @@ const AllFood = () => {
 
   // console.log(filterProduct)
   useEffect(() => {
-    axios.get(`https://server-eight-roan.vercel.app/api/sortProducts?page=${currentPage}&size=${itemsPerPage}`)
+    axios.get(`https://restaurant-server-rho.vercel.app/api/sortProducts?page=${currentPage}&size=${itemsPerPage}`)
       .then(res => {
         if (res) {
           setAllProducts(res?.data)

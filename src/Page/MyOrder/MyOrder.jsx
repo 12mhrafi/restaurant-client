@@ -9,14 +9,14 @@ const MyOrder = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    axios.get(`https://server-eight-roan.vercel.app/allOrderData?email=${user?.email}`)
+    axios.get(`https://restaurant-server-rho.vercel.app/allOrderData?email=${user?.email}`)
       .then((res) => {
         setTotalOrder(res?.data)
       })
   }, [])
 
   const handleDeleteOrder = (id) => {
-    axios.delete(`https://server-eight-roan.vercel.app/allOrderData/${id}`)
+    axios.delete(`https://restaurant-server-rho.vercel.app/allOrderData/${id}`)
       .then(res => {
         if (res.data.deletedCount > 0) {
           const remaining = totalOrder.filter(total => total._id !== id);

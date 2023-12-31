@@ -23,7 +23,7 @@ const UpdatePageCard = ({ singleData }) => {
         // console.log(updateFood)
 
 
-        axios.put(`https://server-eight-roan.vercel.app/singleFoodDetails/${_id}`,updateFood)
+        axios.put(`https://restaurant-server-rho.vercel.app/singleFoodDetails/${_id}`,updateFood)
         .then(res => {
             console.log(res);
             if(res.data.modifiedCount > 0 ){

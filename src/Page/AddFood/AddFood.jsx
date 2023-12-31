@@ -22,7 +22,7 @@ const AddFood = () => {
 
         const addItem = {FoodName,image,category,quantity,order,price,origin,description,email}
 
-        axios.post("https://server-eight-roan.vercel.app/products",addItem)
+        axios.post("https://restaurant-server-rho.vercel.app/products",addItem)
         .then(res =>{
             if(res){
                 toast.success("Successfully Added!")

@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/allFood",
-        loader:() => fetch("https://server-eight-roan.vercel.app/paginationCount"),
+        loader:() => fetch("https://restaurant-server-rho.vercel.app/paginationCount"),
         element:<AllFood></AllFood>
       },
       {
@@ -56,12 +56,12 @@ const router = createBrowserRouter([
       },
       {
         path:"/singleFoodDetails/:id",
-        loader:({params}) => fetch(`https://server-eight-roan.vercel.app/singleFoodDetails/${params.id}`),
+        loader:({params}) => fetch(`https://restaurant-server-rho.vercel.app/singleFoodDetails/${params.id}`),
         element:<SingleFoodDetails></SingleFoodDetails>
       },
       {
         path:"/foodPurchase/:id",
-        loader:({params})=> fetch(`https://server-eight-roan.vercel.app/singleFoodDetails/${params.id}`),
+        loader:({params})=> fetch(`https://restaurant-server-rho.vercel.app/singleFoodDetails/${params.id}`),
         element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>
       },
       {
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/updateFood/:id",
-        loader:({params})=>fetch(`https://server-eight-roan.vercel.app/singleFoodDetails/${params.id}`),
+        loader:({params})=>fetch(`https://restaurant-server-rho.vercel.app/singleFoodDetails/${params.id}`),
         element:<UpdatePage></UpdatePage>
       }
     ]

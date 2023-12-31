@@ -10,7 +10,7 @@ const MyAddedFood = () => {
 
 
  useEffect(()=>{
-    axios.get(`https://server-eight-roan.vercel.app/userAddedProducts?email=${user?.email}`)
+    axios.get(`https://restaurant-server-rho.vercel.app/userAddedProducts?email=${user?.email}`)
     .then(res=>{
         if(res.data){
             setMyFoods(res?.data);
