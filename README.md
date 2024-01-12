@@ -8,4 +8,4 @@ This is Restaurant management website.It has some features.Here are core feature
 - User can't purchase their own added product.
 - Search functionality according to product name.
 
-website live link : https://luxury-florentine-cad98c.netlify.app/
+website live link :https://cool-kataifi-1057b3.netlify.app/
